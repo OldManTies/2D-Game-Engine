@@ -84,12 +84,12 @@ class DirVector2D {
 
     // rotates towards a vector object
     public lookAtVector(target: Vector2D) : void {
-
+        
     }
 
     // rotatest towards xy coords
     public lookAtPos(targetX:number, targetY:number) : void {
-
+        console.log("Looking at: (" + targetX + ", " + targetY + ")");
     }
 
     // normalizes the vector

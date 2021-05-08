@@ -41,3 +41,13 @@ function Update() {
     CanvasContext.stroke();
 }
 
+document.onmousemove = lookAtMouse;
+function lookAtMouse(event) {
+    var mousePos;
+    mousePos = {
+        X:event.pageX,
+        Y:event.pageY
+    }
+    XN.dir.lookAtPos(mousePos.X, mousePos.Y)
+}
+
